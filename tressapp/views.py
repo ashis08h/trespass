@@ -21,6 +21,8 @@ def add_quizz(request):
 	return render(request, 'index.html',{'quiz':quiz})
 def report(request):
 	return render(request, 'report.html')
+def add_more(request):
+	return render(request, 'add_quiz.html')
 def login_check(request):
 	if request.method == 'POST':
 		username = request.POST.get('email')
